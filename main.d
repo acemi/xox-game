@@ -250,7 +250,7 @@ int main(string args[])
 			stdout.writeln("==========");
 		} while(game.goesOn);
 		game.showScores();
-		writeln(whoseTurn.name, " IS A LOSER!");
+		writeln("* * * * ", whoseTurn.name, " WINS!", " * * * *");
 
 	}
 	return 0;
