@@ -198,7 +198,7 @@ class Game {
 		size_t computerCol;
 		uint random = uniform(1,101);
 		if(random < 80) {
-			
+			// AI IS NOT READY YET
 		}
 		return Location(computerRow,computerCol);
 	}
