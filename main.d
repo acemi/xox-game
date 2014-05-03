@@ -215,13 +215,15 @@ int main(string args[])
 		stdout.writeln("=============");
 		stdout.writeln("(1) SINGLE PLAYER");
 		stdout.writeln("(2) TWO PLAYERS");
+		stdout.writeln("(3) QUIT");
 
-		int menuInput = input!(int, "toReturn > 0 && toReturn < 3")
+		int menuInput = input!(int, "toReturn > 0 && toReturn < 4")
 						("Please make a choice.", " %s", "Invalid selection. Please try again.", "Invalid selection. Please try again.");
 		bool isAI_L;
 		final switch(menuInput) {
 			case 1: isAI_L = true; break;
 			case 2: isAI_L = false; break;
+			case 3: return 0; break; // No need for break, actually.
 		}
 		Game game = new Game(isAI_L); // Collect the data
 		game.Player* whoseTurn;
