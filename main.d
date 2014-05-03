@@ -131,7 +131,6 @@ class Game {
 
 	void showBoard() const
 	{
-		//
 		stdout.writeln(this.board);
 	}
 
@@ -227,7 +226,7 @@ int main(string args[])
 		}
 		Game game = new Game(isAI_L); // Collect the data
 		game.Player* whoseTurn;
-		writeln("ALRIGHT! Let the games begin!\n=============");
+		writeln("ALRIGHT! Let the game begin!\n=============");
 		// GAME LOOP
 		int round = 0;
 		do {
